@@ -1,0 +1,1 @@
+Ruleaza pyinstaller.bat as administrator
