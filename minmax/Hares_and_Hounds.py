@@ -40,7 +40,8 @@ class Joc:
 		rez = False
 		pozIepure = firstIndex(self.matr, "i")#gasim pozitia iepurelui
 
-		pozFinale = {1:[2, 4, 5], 3:[2, 5, 6], 7:[4, 5, 8], 9:[5, 6, 8], 0:[3, 6, 9]}#cheia reprezinta pozitia iepurelui
+		#am considerat ca e suficient sa il incolteasca
+		pozFinale = {1:[2, 4, 5], 3:[2, 5, 6], 7:[4, 5, 8], 9:[5, 6, 8], 10:[3, 6, 9]}#cheia reprezinta pozitia iepurelui
 		#iar valorile reprezinta pozitile in ordine crescatoare necesare pentru ca dulaii sa l blocheze pe iepure
 
 		pozCaini = getPozCaini(self.matr)
@@ -68,7 +69,7 @@ class Joc:
 	def mutariCaini(self):
 
 		l_mutari = []
-		mutari = {"sus": -3, "jos": 3, "dreapta": 1}#mutari posibile
+		mutari = {"sus": -3, "jos": 3, "dreapta": 1, "diag": 4}#mutari posibile
 
 		caini = []
 
@@ -118,7 +119,7 @@ class Joc:
 			mutari = {"stanga" : -1, "dreapta": 1, "sus": -3, "jos": 3, "diagNV": -4, "diagNE": -2, "diagSW": 2, "diagSE": 4}#mutari iepure
 
 		if jucatorCurent == -1:
-			print("Nu s-a gasit caracterul")
+			print("Nu s-a gasit caracterul ", jucator)
 			return l_mutari
 
 		if jucatorCurent == 0:#poz de finala
@@ -409,7 +410,7 @@ def validareMiscareCaine(poz1, poz2):
 		return True
 	#^^^ cazuri speciale
 
-	mutari = {"sus": -3, "jos": 3, "dreapta": 1}	
+	mutari = {"sus": -3, "jos": 3, "dreapta": 1, "diag": 4}	
 
 	for i in mutari.values():#verificam daca pentru mutarile posibile exista combinatia de care avem nevoie
 		if poz1 + i == poz2:
@@ -435,10 +436,13 @@ def validareMiscareIepure(poz1, poz2):
 
 	#^^^cazuri speciale
 
-	mutari = {"stanga" : -1, "dreapta": 1, "sus": -3, "jos": 3, "diagNE": -4, "diagNW": -2, "diagSW": 4, "diagSE": 2}
+	mutari = {"stanga" : -1, "dreapta": 1, "sus": -3, "jos": 3}
+	if poz1 in [0, 5, 10]:#daca e pe o pozitie de pe care se poate muta pe diagonala
+		mutari = {"stanga" : -1, "dreapta": 1, "sus": -3, "jos": 3, "diagNE": -4, "diagNW": -2, "diagSW": 4, "diagSE": 2}
+
 
 	if poz1 % 3 == 0:
-		mutari = {"stanga" : -1, "sus": -3, "jos": 3, "diagNE": -4, "diagSE": 2}
+		mutari = {"stanga" : -1, "sus": -3, "jos": 3}
 
 	for i in mutari.values():#verificam daca pentru mutarile posibile exista combinatia de care avem nevoie
 		if poz1 + i == poz2:
