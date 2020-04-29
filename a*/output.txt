@@ -1,0 +1,53 @@
+Raza lacului: 7.0
+Greutate initiala: 2.0
+Frunza start: id1
+Fisier input: inputs/input1.txt
+Calculatorul a "gandit" timp de 0 milisecunde.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Raza lacului: 7.0
+Greutate initiala: 2.0
+Frunza start: id1
+Fisier input: inputs/input1.txt
+Calculatorul a "gandit" timp de 0 milisecunde.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Raza lacului: 7.0
+Greutate initiala: 6.0
+Frunza start: id9
+Fisier input: inputs/input2.txtBroscuta a sarit la id9(-5, 0). Greutate: 6.0
+
+Calculatorul a "gandit" timp de 1 milisecunde.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Raza lacului: 7.0
+Greutate initiala: 6.0
+Frunza start: id9
+Fisier input: inputs/input2.txtBroscuta a sarit la id9(-5, 0). Greutate: 6.0
+
+Calculatorul a "gandit" timp de 1 milisecunde.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Raza lacului: 7.0
+Greutate initiala: 6.0
+Frunza start: id9
+Fisier input: inputs/input2.txtBroscuta a sarit la id9(-5, 0). Greutate: 6.0
+
+Calculatorul a "gandit" timp de 1 milisecunde.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Raza lacului: 10.0
+Greutate initiala: 5.0
+Frunza start: id1
+Fisier input: inputs/input4.txtBroscuta a sarit la id1(0, 0). Greutate: 5.0
+Broscuta a sarit la id2(-1, 1). Greutate: 4.0
+Broscuta a sarit la id6(-3, 1). Greutate: 6.0
+Broscuta a sarit la id10(-5, 0). Greutate: 6.0
+Broscuta a sarit la id8(-7, 0). Greutate: 6.0
+Broscuta a sarit la id3(-8, 1). Greutate: 5.0
+Broscuta a sarit la id8(-7, 0). Greutate: 7.0
+Broscuta a sarit la id3(-8, 1). Greutate: 6.0
+
+Calculatorul a "gandit" timp de 76 milisecunde.~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
